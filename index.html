@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termfolio | Terminal Based Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+<body>
+<div class="termfolio" tabindex="1">
+    <h1 class="header" id="header">Termfolio</h1>
+    <p class="desc" id="desc">Simple Terminal Based Portfolio made with HTML CSS and JavaScript</p>
+    <p class="help" id="help">Type <span>&quot;show&quot;</span> to show all possible commands and <span>&quot;clear&quot;</span> to clear the terminal.</p>
+    <div class="output" id="output"></div>
+
+    <div class="command-container">
+    <label id="label" for="commands">termfolio@farhan&clubs; ~ </label>
+    <input type="text" name="text" id="commands" tabindex="0" autofocus/>
+    <button type="button" id="enter"><i class="ri-corner-down-left-line"></i></button>
+    </div>
+    <div class="error" id="error"><i class="ri-error-warning-fill"></i> Termforlio : Command Not Found</div>
+    <div class="empty" id="empty"><i class="ri-error-warning-fill"></i> Termforlio : Enter Commands</div>
+    
+</div>
+    
+<script src="./src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500;600;700&display=swap');
+:root{
+    --text-color:#fcff65;
+    --text-font:'Red Hat Mono', monospace;
+    --bold-text-color:#c2a3e7;
+    --bold-text-font:'Press Start 2P', cursive;
+}
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+*::selection{
+color:#360079;
+background-color: #ebdaff;
+}
+html,body{
+width:100%;
+height:100%;
+background-color: #1a1b26;
+position: relative;
+}
+h1.header{
+font-family: var(--bold-text-font);
+color:var(--bold-text-color);
+font-size:3.5rem;
+text-align: center;
+}
+p.desc{
+padding:10px 0;
+color:var(--bold-text-color);
+font-size:18px;
+}
+p.help{
+padding:10px 0;
+color:#eee;
+font-size:18px;
+}
+p.help span{
+color:var(--text-color);
+font-size:18px;
+}
+div.termfolio{
+padding:3rem 10rem;
+width:100vw;
+line-height: 1.6;
+font-family: var(--text-font);  
+display:flex;
+align-items: center;
+flex-direction: column;
+position: absolute;
+bottom: 1rem;
+right:0rem;
+}
+/* Commands Styles*/
+label{
+font-size:17px;
+cursor:pointer;
+color:var(--bold-text-color);
+}
+input#commands{
+all:unset;
+color:var(--text-color);
+}
+
+ul.list{
+list-style: none;
+padding:6px;
+}
+ul.list>li:first-child{
+    color:#fff;
+}
+ul.list>li:last-child{
+    color:#fff;
+}
+ul.list li{
+color:var(--text-color);
+}
+div.output{
+text-align: left;
+align-self:flex-start;
+background-color: rgba(142, 165, 158, 0);
+width:100%;
+border-radius:20px;
+padding:0 7rem;
+}
+div.command-container{
+align-self:flex-start;
+padding:10px 7rem;
+}
+div.error{
+    padding:10px;
+    color:rgb(255, 123, 123);
+    display: none;
+    text-align: left;
+}
+
+div.empty{
+    padding:10px;
+    color:rgb(123, 255, 237);
+    display: none;
+    text-align: left;
+}
+div.aboutme,.projects,.socials,.blog,.skills,.yt{
+font-family:var(--text-font);
+color:var(--text-color);
+padding-bottom:6px;
+}
+div.socials>p a{
+    color:#fcff65;
+    text-decoration: none;
+}
+div.yt>p a{
+    color:#fcff65;
+    text-decoration: none;
+}
+div.socials>p a:hover
+{
+text-decoration:underline;
+}
+div.yt> p a:hover{
+    text-decoration:underline;
+}
+button#enter{
+all:unset;
+color:var(--bold-text-color);
+display: none;
+}
