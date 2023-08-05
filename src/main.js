@@ -186,6 +186,7 @@ input.addEventListener('keypress',(e)=>{
 })
 enter.addEventListener('click',(e)=>{
         e.preventDefault();
+        input.autofocus;
         if(input.value===''){
             empty.style.display='block';
             error.style.display='none'
